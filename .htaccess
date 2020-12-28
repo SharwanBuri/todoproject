@@ -1,0 +1,8 @@
+# Use PHPBETA Single php.ini as default
+RewriteEngine on
+php_value short_open_tag 1
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* /todotask/index.php?/$0 [PT,L] 
+
+
